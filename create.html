@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventConnect</title>
+    <link rel="stylesheet" href="./create.css">
+</head>
+<body>
+
+    <button class="menu-btn" onclick="toggleSidebar()">&#9776;</button>
+
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="inbox.html">Messages</a></li>
+            <li><a href="notification.html">Notifications</a></li>
+            <li><a href="create.html">Create</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <button class="create-btn" onclick="openModal()">Create Post</button>
+
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Create a Post</h2>
+            <textarea placeholder="What's on your mind?" class="post-text"></textarea>
+            <label for="fileInput" class="file-label">Upload Image or Video:</label>
+            <input type="file" id="fileInput" class="file-input" title="Choose a file to upload">
+
+            <button class="post-btn">Post</button>
+        </div>
+    </div>
+
+    <script src="./create.js"></script>
+</body>
+</html>
+
+

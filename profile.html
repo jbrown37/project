@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - EventConnect</title>
+    <link rel="stylesheet" href="./profile.css">
+    <script defer src="./profile.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <button class="menu-btn" onclick="toggleSidebar()">&#9776;</button>
+
+    <nav class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">X</button>
+        <ul>
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="inbox.html">Messages</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="create.html">Create</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="profile-container">
+        <div class="profile-card">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+            <h2 class="username">Username</h2>
+            <p class="bio">Bio description goes here...</p>
+        </div>
+
+        <div class="tab-buttons">
+            <button class="tab-link active" onclick="openTab(event, 'posts')">Posts</button>
+            <button class="tab-link" onclick="openTab(event, 'saved')">Saved Events</button>
+        </div>
+>
+        <div id="posts" class="tab-content active">
+            <p>Posts will appear here...</p>
+        </div>
+
+        <div id="saved" class="tab-content">
+            <p>Saved events will appear here...</p>
+        </div>
+    </div>
+</body>
+</html>

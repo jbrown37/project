@@ -1,0 +1,155 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #FFD700;
+    background: none;
+    border: none;
+    z-index: 1000;
+}
+
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    background-color: #1a1a1a;
+    transition: left 0.3s ease-in-out;
+    padding-top: 60px;
+    box-shadow: 2px 0px 10px #FFD700;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display:block ;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    background-color: #1a1a1a;
+    color: black;
+}
+
+.sidebar ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFD700;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.sidebar ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.sidebar ul li a:hover {
+    color: #FFD700;
+}
+
+.create-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFD700;
+    color: black;
+    padding: 12px 18px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px #FFD700;
+}
+
+.create-btn:hover {
+    background-color: #FFD700;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFD700;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0px 0px 15px #FFD700;
+    text-align: center;
+}
+
+.close {
+    color: #FFD700;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.post-text {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.file-input {
+    margin: 10px 0;
+}
+
+.post-btn {
+    background-color: #FFD700;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.post-btn:hover {
+    background-color: #FFD700;
+}

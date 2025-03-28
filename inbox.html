@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - EventConnect</title>
+    <link rel="stylesheet" href="./inbox.css">
+</head>
+<body>
+    <button class="menu-btn" onclick="toggleSidebar()">&#9776;</button>
+
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="inbox.html">Messages</a></li>
+            <li><a href="">Notifications</a></li>
+            <li><a href="create.html">Create</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="messages-container">
+        <div class="chat-list">
+            <div class="chat-entry">
+                <img src="profile1.jpg" alt="User" class="chat-avatar">
+                <div class="chat-info">
+                    <h4>John Doe</h4>
+                    <p>Hey! How are you?</p>
+                </div>
+            </div>
+            <div class="chat-entry">
+                <img src="profile2.jpg" alt="User" class="chat-avatar">
+                <div class="chat-info">
+                    <h4>Jane Smith</h4>
+                    <p>See you later!</p>
+                </div>
+            </div>
+        </div>
+        <div class="chat-window">
+            <p>Select a conversation to start chatting</p>
+        </div>
+    </div>
+
+    <script src="./inbox.js"></script>
+</body>
+</html>
+

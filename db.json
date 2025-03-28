@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "123456"
+    }
+  ],
+  "events": [
+    {
+      "id": "2fb8",
+      "name": "QuickDev",
+      "date": "2025-02-22",
+      "location": "New York"
+    }
+  ]
+}
